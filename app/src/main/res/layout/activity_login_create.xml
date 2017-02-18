@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login_create"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/darkestGreenScheme"
+    android:orientation="vertical"
+    tools:context="nyc.c4q.maxrosado.hackathonapp.login.LoginCreate">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/new_username_request"
+        android:textColor="@color/White"
+        android:textSize="@dimen/textview_fontsize"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/username_logCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/edit_text_margin_bottom"
+        android:background="@color/White" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/new_password_request"
+        android:textColor="@color/White"
+        android:textSize="@dimen/textview_fontsize"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/password_logCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/edit_text_margin_bottom"
+        android:background="@color/White" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/new_password_confirm_request"
+        android:textColor="@color/White"
+        android:textSize="@dimen/textview_fontsize"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/password_confirm_logCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/edit_text_margin_bottom"
+        android:background="@color/White" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/new_fName_request"
+        android:textColor="@color/White"
+        android:textSize="@dimen/textview_fontsize"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/fName_logCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/edit_text_margin_bottom"
+        android:background="@color/White" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/new_lName_request"
+        android:textColor="@color/White"
+        android:textSize="@dimen/textview_fontsize"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/lName_logCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/edit_text_margin_bottom"
+        android:background="@color/White" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/new_bday_request"
+        android:textColor="@color/White"
+        android:textSize="@dimen/textview_fontsize"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Animation.AppCompat.DropDownUp"></Spinner>
+
+</LinearLayout>
