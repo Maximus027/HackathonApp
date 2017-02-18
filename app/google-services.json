@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "898967197133",
+    "firebase_url": "https://hackathonapp-1ef6e.firebaseio.com",
+    "project_id": "hackathonapp-1ef6e",
+    "storage_bucket": "hackathonapp-1ef6e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898967197133:android:87f6322d6bce07c3",
+        "android_client_info": {
+          "package_name": "nyc.c4q.maxrosado.hackathonapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "898967197133-6b88avfidl5q0pl48uanhtl13bhb05vq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCp1UV7S1yoWSvH55BgNhQYSVuFfZZRn0o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
