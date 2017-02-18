@@ -1,3 +1,22 @@
 <resources>
+
     <string name="app_name">HackathonApp</string>
+    <string name="username_title">Username</string>
+    <string name="password_title">Password</string>
+    <string name="new_username_request">Create Username</string>
+    <string name="new_password_request">Create Password</string>
+    <string name="new_password_confirm_request">Confirm Password</string>
+    <string name="new_fName_request">First Name</string>
+    <string name="new_lName_request">Last Name</string>
+    <string name="new_bday_request">Date of Birth</string>
+    <string-array name="dob">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+
+    </string-array>
+
 </resources>
