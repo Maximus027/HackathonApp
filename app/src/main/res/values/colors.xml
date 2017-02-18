@@ -8,6 +8,5 @@
     <color name="middleGreenScheme">#1DE9B6</color>
     <color name="darkestGreenScheme">#26A69A</color>
     <color name="White">#FFFFFF</color>
-
-
+    <color name="black">#000</color>
 </resources>
