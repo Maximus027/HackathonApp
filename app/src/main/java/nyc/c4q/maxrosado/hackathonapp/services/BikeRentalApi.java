@@ -10,7 +10,7 @@ import retrofit2.http.GET;
 
 public interface BikeRentalApi {
 
-    //https://api.citybik.es/v2/networks
-    @GET("v2/networks")
+    //https://api.citybik.es/v2/networks/citi-bike-nyc
+    @GET("v2/networks/citi-bike-nyc")
     Call<BikeRental> getNetworks();
 }

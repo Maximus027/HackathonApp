@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
-import nyc.c4q.maxrosado.hackathonapp.models.BikeLocation;
+import nyc.c4q.maxrosado.hackathonapp.models.Station;
 
 
 /**
@@ -14,7 +14,7 @@ import nyc.c4q.maxrosado.hackathonapp.models.BikeLocation;
  */
 
 public class BikeRentalAdapter extends RecyclerView.Adapter {
-    private List<BikeLocation> bikeLocations = new ArrayList<>();
+    private List<Station> bikeStations = new ArrayList<>();
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -24,17 +24,18 @@ public class BikeRentalAdapter extends RecyclerView.Adapter {
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         BikeRentalViewHolder bikeViewHolder = (BikeRentalViewHolder) holder;
-        BikeLocation currentBikelocation = bikeLocations.get(position);
-        bikeViewHolder.bind(currentBikelocation);
+        Station currentBikeStation = bikeStations.get(position);
+        bikeViewHolder.bind( currentBikeStation);
     }
+
 
     @Override
     public int getItemCount() {
-        return bikeLocations.size();
+        return bikeStations.size();
     }
 
-    public void setData(List<BikeLocation> locations) {
-        this.bikeLocations = locations;
+    public void setData(List<Station> locations) {
+        this.bikeStations = locations;
         notifyDataSetChanged();
     }
 }

@@ -12,8 +12,8 @@ import android.view.ViewGroup;
 
 import java.util.List;
 
-import nyc.c4q.maxrosado.hackathonapp.models.BikeLocation;
 import nyc.c4q.maxrosado.hackathonapp.models.BikeRental;
+import nyc.c4q.maxrosado.hackathonapp.models.Station;
 import nyc.c4q.maxrosado.hackathonapp.services.BikeRentalApi;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -28,8 +28,12 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class BikeRentalFragment extends Fragment {
     //https://api.citybik.es/v2/networks
-    private static final String BASE_URL = "https://api.citybik.es/";
     private RecyclerView recyclerView;
+    private RecyclerView.LayoutManager layoutManager;
+    private BikeRentalAdapter adapter;
+
+    private static final String BASE_URL = "https://api.citybik.es/";
+    private static final String TAG = "BikeActivity";
 
     @Nullable
     @Override
@@ -40,6 +44,7 @@ public class BikeRentalFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
         recyclerView = (RecyclerView) view.findViewById(R.id.bike_rental_rv);
         recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
         recyclerView.setAdapter(new BikeRentalAdapter());
@@ -47,6 +52,7 @@ public class BikeRentalFragment extends Fragment {
         //retrofit
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(BASE_URL)
+                //.addConverterFactory(GsonConverterFactory.create(new GsonBuilder().registerTypeAdapter(BikeNetwork.class, new BikeNetworkSerializer()).create()))
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
@@ -56,21 +62,23 @@ public class BikeRentalFragment extends Fragment {
         call.enqueue(new Callback<BikeRental>() {
             @Override
             public void onResponse(Call<BikeRental> call, Response<BikeRental> response) {
-                Log.d("JJJ", "onResponse: " + response.isSuccessful());
-                Log.d("JJJ", "onResponse: " + response.body().getNetworks().get(0));
+                Log.d(TAG, "onResponse: "+response.isSuccessful());
 
                 BikeRental bikeRental = response.body();
-                List<BikeLocation> bikeLocations = bikeRental.getBikeLocation();
+                List<Station> bikeLocations = bikeRental.getNetwork().getStations();
                 BikeRentalAdapter adapter = (BikeRentalAdapter) recyclerView.getAdapter();
                 adapter.setData(bikeLocations);
             }
 
             @Override
             public void onFailure(Call<BikeRental> call, Throwable t) {
-                t.printStackTrace();
-                Log.d("JJJ", "error " + call.toString());
+                Log.d(TAG, "onResponse: FAILED" + t);
+
             }
         });
+
+
+
     }
 }
 
