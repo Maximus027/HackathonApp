@@ -19,18 +19,22 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".HomeActivity">
+        </activity>
+        <activity android:name=".BikeRentalActivity">
+        </activity>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <activity android:name=".LocationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
-        <activity android:name=".LocationActivity">
+        <activity android:name=".login.LoginMain" >
+
         </activity>
-        <activity android:name=".login.LoginMain" />
         <activity android:name=".login.LoginCreate"></activity>
     </application>
 
