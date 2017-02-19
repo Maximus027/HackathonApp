@@ -1,21 +1,16 @@
-package nyc.c4q.maxrosado.hackathonapp;
+package nyc.c4q.maxrosado.hackathonapp.tabFragments.hiking;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.RecyclerView;
+
+import nyc.c4q.maxrosado.hackathonapp.R;
+import nyc.c4q.maxrosado.hackathonapp.tabFragments.bike.BikeRentalFragment;
 
 /**
  * Created by tarynking on 2/18/17.
  */
 
-
-public class BikeRentalActivity extends AppCompatActivity {
-
-    private RecyclerView recyclerView;
-    private RecyclerView.LayoutManager llm;
-    private BikeRentalAdapter adapter;
-
-    private static final String BASE_URL = "https://api.citybik.es/";
+public class HikingActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

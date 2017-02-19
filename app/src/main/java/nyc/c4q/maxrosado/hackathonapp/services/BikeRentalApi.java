@@ -1,6 +1,6 @@
 package nyc.c4q.maxrosado.hackathonapp.services;
 
-import nyc.c4q.maxrosado.hackathonapp.models.BikeRental;
+import nyc.c4q.maxrosado.hackathonapp.models.bike_models.BikeRental;
 import retrofit2.Call;
 import retrofit2.http.GET;
 

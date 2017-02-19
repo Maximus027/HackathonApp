@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">HackathonApp</string>
+    <string name="title_activity_basketball">BasketballActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_handball">HandballActivity</string>
+    <string name="title_activity_parks">ParksActivity</string>
 </resources>

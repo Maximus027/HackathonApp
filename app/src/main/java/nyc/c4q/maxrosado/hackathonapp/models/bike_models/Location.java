@@ -1,4 +1,4 @@
-package nyc.c4q.maxrosado.hackathonapp.models;
+package nyc.c4q.maxrosado.hackathonapp.models.bike_models;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
