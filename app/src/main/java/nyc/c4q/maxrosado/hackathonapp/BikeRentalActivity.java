@@ -23,4 +23,8 @@ public class BikeRentalActivity extends AppCompatActivity {
         }
 
     }
+
+//    public void openLocationActivity() {
+//        Intent intent = new Intent(this, LocationActivity.this);
+//    }
 }

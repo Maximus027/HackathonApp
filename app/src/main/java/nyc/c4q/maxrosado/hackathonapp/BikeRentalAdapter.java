@@ -25,7 +25,7 @@ public class BikeRentalAdapter extends RecyclerView.Adapter {
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         BikeRentalViewHolder bikeViewHolder = (BikeRentalViewHolder) holder;
         Station currentBikeStation = bikeStations.get(position);
-        bikeViewHolder.bind( currentBikeStation);
+        bikeViewHolder.bind(currentBikeStation);
     }
 
 

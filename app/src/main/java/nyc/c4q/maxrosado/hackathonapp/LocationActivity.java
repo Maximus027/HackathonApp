@@ -2,6 +2,7 @@ package nyc.c4q.maxrosado.hackathonapp;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.RecyclerView;
 
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -12,6 +13,9 @@ import com.google.android.gms.maps.model.LatLng;
 
 public class LocationActivity extends AppCompatActivity implements OnMapReadyCallback {
     private GoogleMap mainGoogleMap;
+    private static final String BASE_URL = "https://api.citybik.es/";
+    private static final String TAG = "BikeActivity";
+    private RecyclerView recyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

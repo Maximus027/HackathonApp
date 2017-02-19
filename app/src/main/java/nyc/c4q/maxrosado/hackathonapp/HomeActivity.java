@@ -1,7 +1,7 @@
 package nyc.c4q.maxrosado.hackathonapp;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
@@ -24,4 +24,10 @@ public class HomeActivity extends AppCompatActivity {
         recyclerView.setAdapter(basketballAdapter);
 
     }
+
+//    public void startCreateGameActivity () {
+//        Intent intent = new Intent(this, CreateGameActivity.class);
+//        startActivity(intent);
+//    }
+
 }

@@ -7,8 +7,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
+import nyc.c4q.maxrosado.hackathonapp.BikeRentalActivity;
 import nyc.c4q.maxrosado.hackathonapp.HomeActivity;
-import nyc.c4q.maxrosado.hackathonapp.LocationActivity;
 import nyc.c4q.maxrosado.hackathonapp.R;
 
 public class sportChooser extends AppCompatActivity {
@@ -28,7 +28,7 @@ public class sportChooser extends AppCompatActivity {
                     Intent intent = new Intent(sportChooser.this, HomeActivity.class);
                     startActivity(intent);
                 } else {
-                    Intent intent = new Intent(sportChooser.this, LocationActivity.class);
+                    Intent intent = new Intent(sportChooser.this, BikeRentalActivity.class);
                     startActivity(intent);
                 }
 

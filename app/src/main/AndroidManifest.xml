@@ -7,7 +7,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission
         android:name="nyc.c4q.maxrosado.hackathonapp.permission.MAPS_RECEIVE"
         android:protectionLevel="signature" />
@@ -20,9 +20,11 @@
         android:theme="@style/AppTheme">
         <activity android:name=".HomeActivity" />
         <activity android:name=".BikeRentalActivity" />
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
+
         <activity android:name=".LocationActivity" />
         <activity android:name=".sportchoose.sportChooser">
             <intent-filter>
@@ -31,8 +33,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".login.LoginMain" />
+        <activity android:name=".login.LoginMain"></activity>
         <activity android:name=".login.LoginCreate" />
+        <activity android:name=".CreateGameActivity"></activity>
     </application>
 
 </manifest>

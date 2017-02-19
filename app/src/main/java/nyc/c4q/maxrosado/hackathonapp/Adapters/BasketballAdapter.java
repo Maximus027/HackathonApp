@@ -18,7 +18,8 @@ public class BasketballAdapter extends RecyclerView.Adapter<BasketballAdapter.My
 
     String[] bouroughNames = {"Manhattan", "Bronx", "Brooklyn", "Queens", "Staten Island",
             "Manhattan", "Bronx", "Brooklyn", "Queens", "Staten Island"};
-    String[] dates = {"Thu Jan 28th ", "Mon Feb 28th ", "Fri Jan 28th ", "Wed Jan 28th "};
+    String[] dates = {"Thu Jan 28th ", "Mon Feb 28th ", "Fri Jan 28th ", "Wed Jan 28th ", "Wed Jan 28th ",
+            "Thu Jan 29th ", "Thu Jan 29th", "Thu Jan 29th", "Thu Han 29th", "Thu Jan 29th"};
     int[] sportsCons = {R.drawable.basketballicon, R.drawable.basketballicon, R.drawable.basketballicon,
             R.drawable.basketballicon, R.drawable.basketballicon};
     int[] peopleIcons = {R.drawable.usericon, R.drawable.usericon, R.drawable.usericon, R.drawable.usericon,
@@ -72,7 +73,8 @@ public class BasketballAdapter extends RecyclerView.Adapter<BasketballAdapter.My
 
     @Override
     public int getItemCount() {
-        return bouroughNames.length;
+        return 4;
     }
+
 
 }
