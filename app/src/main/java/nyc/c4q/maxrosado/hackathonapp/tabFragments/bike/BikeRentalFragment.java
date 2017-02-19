@@ -1,4 +1,4 @@
-package nyc.c4q.maxrosado.hackathonapp;
+package nyc.c4q.maxrosado.hackathonapp.tabFragments.bike;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -12,8 +12,9 @@ import android.view.ViewGroup;
 
 import java.util.List;
 
-import nyc.c4q.maxrosado.hackathonapp.models.BikeRental;
-import nyc.c4q.maxrosado.hackathonapp.models.Station;
+import nyc.c4q.maxrosado.hackathonapp.R;
+import nyc.c4q.maxrosado.hackathonapp.models.bike_models.BikeRental;
+import nyc.c4q.maxrosado.hackathonapp.models.bike_models.Station;
 import nyc.c4q.maxrosado.hackathonapp.services.BikeRentalApi;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -29,8 +30,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class BikeRentalFragment extends Fragment {
     //https://api.citybik.es/v2/networks
     private RecyclerView recyclerView;
-    private RecyclerView.LayoutManager layoutManager;
-    private BikeRentalAdapter adapter;
+
 
     private static final String BASE_URL = "https://api.citybik.es/";
     private static final String TAG = "BikeActivity";

@@ -7,9 +7,9 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
-import nyc.c4q.maxrosado.hackathonapp.BikeRentalActivity;
-import nyc.c4q.maxrosado.hackathonapp.HomeActivity;
 import nyc.c4q.maxrosado.hackathonapp.R;
+import nyc.c4q.maxrosado.hackathonapp.tabFragments.HomeActivity;
+import nyc.c4q.maxrosado.hackathonapp.tabFragments.bike.BikeRentalActivity;
 
 public class sportChooser extends AppCompatActivity {
 

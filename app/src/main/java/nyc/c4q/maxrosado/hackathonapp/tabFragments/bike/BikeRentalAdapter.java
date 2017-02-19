@@ -1,4 +1,4 @@
-package nyc.c4q.maxrosado.hackathonapp;
+package nyc.c4q.maxrosado.hackathonapp.tabFragments.bike;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.ViewGroup;
@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
-import nyc.c4q.maxrosado.hackathonapp.models.Station;
+import nyc.c4q.maxrosado.hackathonapp.models.bike_models.Station;
 
 
 /**

@@ -1,4 +1,4 @@
-package nyc.c4q.maxrosado.hackathonapp;
+package nyc.c4q.maxrosado.hackathonapp.tabFragments;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import nyc.c4q.maxrosado.hackathonapp.Adapters.BasketballAdapter;
+
+import nyc.c4q.maxrosado.hackathonapp.R;
 
 public class HomeActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
