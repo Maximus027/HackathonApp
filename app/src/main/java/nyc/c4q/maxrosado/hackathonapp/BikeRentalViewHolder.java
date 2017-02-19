@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import nyc.c4q.maxrosado.hackathonapp.models.BikeLocation;
+import nyc.c4q.maxrosado.hackathonapp.models.Station;
 
 /**
  * Created by tarynking on 2/18/17.
@@ -35,12 +35,8 @@ public class BikeRentalViewHolder extends RecyclerView.ViewHolder {
         return inflater.inflate(R.layout.bike_rental_item_layout, parent, false);
     }
 
-    public void bind(final BikeLocation bikeLocation) {
-        bikeRentalCityTextView.setText(bikeLocation.getCity());
-        bikeRentalCountryTextView.setText(bikeLocation.getCountry());
-
-
-
-
+    public void bind(final Station bikeLocation) {
+        bikeRentalCityTextView.setText(bikeLocation.getName());
+        bikeRentalCountryTextView.setText("Available bikes: "+ bikeLocation.getFreeBikes().toString());
     }
 }

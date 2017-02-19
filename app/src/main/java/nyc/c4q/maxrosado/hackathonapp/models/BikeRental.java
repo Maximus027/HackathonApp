@@ -1,40 +1,27 @@
 package nyc.c4q.maxrosado.hackathonapp.models;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+import java.io.Serializable;
 
 /**
  * Created by tarynking on 2/18/17.
  */
+public class BikeRental implements Serializable
+{
 
-public class BikeRental {
+    @SerializedName("network")
+    @Expose
+    private Network network;
+    private final static long serialVersionUID = 5387557171926702746L;
 
-    private List<BikeNetwork> networks = null;
-    private final static long serialVersionUID = 4142664090985548974L;
-
-    public List<BikeNetwork> getNetworks() {
-        return networks;
+    public Network getNetwork() {
+        return network;
     }
 
-    public void setNetworks(List<BikeNetwork> networks) {
-        this.networks = networks;
-    }
-
-    public List<BikeLocation> getBikeLocation() {
-        List<BikeLocation> result = new ArrayList<>();
-        if (networks != null && !networks.isEmpty()) {
-            for (int i = 0; i < networks.size(); i++) {
-                BikeNetwork bikeNetwork = networks.get(i);
-                if (bikeNetwork != null) {
-                    BikeLocation bikeLocation = bikeNetwork.getLocation();
-                    if (bikeLocation != null) {
-                        result.add(bikeLocation);
-                    }
-                }
-            }
-        }
-        return result;
+    public void setNetwork(Network network) {
+        this.network = network;
     }
 
 }
-
