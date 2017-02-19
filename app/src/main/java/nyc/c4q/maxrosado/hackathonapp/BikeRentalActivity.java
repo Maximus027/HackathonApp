@@ -2,7 +2,6 @@ package nyc.c4q.maxrosado.hackathonapp;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.RecyclerView;
 
 /**
  * Created by tarynking on 2/18/17.
@@ -10,12 +9,6 @@ import android.support.v7.widget.RecyclerView;
 
 
 public class BikeRentalActivity extends AppCompatActivity {
-
-    private RecyclerView recyclerView;
-    private RecyclerView.LayoutManager llm;
-    private BikeRentalAdapter adapter;
-
-    private static final String BASE_URL = "https://api.citybik.es/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
