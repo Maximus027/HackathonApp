@@ -47,7 +47,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="login" />
+        android:text="login"
+        android:onClick="loginIntent"/>
 
     <RelativeLayout
         android:id="@+id/login_create_section"
@@ -55,7 +56,7 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:layout_marginTop="260dp"
+            android:layout_marginTop="255dp"
             android:id="@+id/create_acct"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -64,7 +65,8 @@
             android:text="Don't have an account?"
             android:textAlignment="center"
             android:textSize="@dimen/textview_fontsize"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:onClick="createAcct"/>
 
     </RelativeLayout>
 

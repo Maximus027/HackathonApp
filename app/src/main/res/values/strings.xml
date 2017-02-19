@@ -3,12 +3,15 @@
     <string name="app_name">HackathonApp</string>
     <string name="username_title">Username</string>
     <string name="password_title">Password</string>
-    <string name="new_username_request">Create Username</string>
+    <string name="new_email_request">Email Address</string>
     <string name="new_password_request">Create Password</string>
     <string name="new_password_confirm_request">Confirm Password</string>
     <string name="new_fName_request">First Name</string>
     <string name="new_lName_request">Last Name</string>
+    <string name="new_Name_request">Full Name</string>
     <string name="new_bday_request">Date of Birth</string>
+    <string name="new_zip_request">Zipcode</string>
+    <string name="submit_btn">submit</string>
     <string-array name="dob">
         <item>1</item>
         <item>2</item>
