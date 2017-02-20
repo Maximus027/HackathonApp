@@ -10,11 +10,8 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,11 +34,11 @@ public class Basketball extends Activity {
     DatabaseReference mRootRef = FirebaseDatabase.getInstance().getReference();
     DatabaseReference mCondition = mRootRef.child("Date");
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sportslandingpage);
-
 
         imageView = (ImageView) findViewById(R.id.logoBanner);
         imageView.setImageResource(R.drawable.basketball);
@@ -62,21 +59,4 @@ public class Basketball extends Activity {
         recyclerView.setAdapter(basketballAdapter);
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-
-        mCondition.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                String dateValue = dataSnapshot.getValue(String.class);
-                dateofGames.add(0, dateValue);
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
-    }
 }

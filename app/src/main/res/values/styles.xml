@@ -1,9 +1,9 @@
 <resources>
 
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorPrimary">@color/darkestGreenScheme</item>
+        <item name="colorPrimary">@color/White</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccent">@color/darkestGreenScheme</item>
     </style>
 
     <style name="AppTheme.NoActionBar">

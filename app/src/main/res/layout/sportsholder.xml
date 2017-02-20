@@ -3,10 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/sportsCardView"
     android:layout_width="match_parent"
-    android:layout_height="235dp"
+    android:layout_height="215dp"
     android:layout_marginBottom="10dp"
-    android:orientation="vertical"
-    app:cardCornerRadius="5dp">
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical">
 
     <RelativeLayout
         android:id="@+id/sportsLayout"
@@ -15,12 +16,20 @@
         android:layout_marginLeft="2dp"
         android:orientation="horizontal">
 
+        <TextView
+            android:id="@+id/userId"
+            android:text="Michael"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_width="155dp"
+            android:layout_height="20dp" />
+
         <ImageView
             android:id="@+id/userImage"
             android:layout_width="150dp"
-            android:layout_height="160dp"
+            android:layout_height="150dp"
             android:layout_marginLeft="7dp"
-            android:layout_marginTop="20dp"
+            android:layout_below="@+id/userId"
             android:src="@drawable/placeholderimage" />
 
         <ImageView
@@ -33,25 +42,61 @@
         <TextView
             android:id="@+id/dateOfGame"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
             android:layout_toRightOf="@+id/userImage"
             android:gravity="center_horizontal"
             android:textStyle="bold" />
 
+        <ImageView
+            android:id="@+id/timeIcon"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/dateOfGame"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/userImage"
+            android:src="@drawable/timeicon" />
+
+        <TextView
+            android:id="@+id/timeView"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/dateOfGame"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/timeIcon"
+            android:paddingTop="5dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/locationIcon"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/timeIcon"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/userImage"
+            android:src="@drawable/locationicon" />
+
         <TextView
             android:id="@+id/bouroughOfGame"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_below="@+id/dateOfGame"
-            android:layout_toRightOf="@+id/userImage"
-            android:gravity="center_horizontal" />
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/timeView"
+            android:layout_toRightOf="@+id/locationIcon" />
+
+        <TextView
+            android:id="@+id/skillLevel"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/bouroughOfGame"
+            android:layout_marginLeft="55dp"
+            android:layout_toRightOf="@id/userImage"
+            android:text="Beginner" />
 
         <LinearLayout
             android:id="@+id/personIconLayout"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_below="@id/bouroughOfGame"
+            android:layout_height="20dp"
+            android:layout_below="@id/skillLevel"
             android:layout_marginLeft="5dp"
             android:layout_toRightOf="@id/userImage"
             android:orientation="horizontal">
@@ -78,7 +123,8 @@
                 android:id="@+id/fourPerson"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:src="@drawable/plusicon" />
 
         </LinearLayout>
 
@@ -87,7 +133,7 @@
             android:layout_width="160dp"
             android:layout_height="50dp"
             android:layout_below="@id/personIconLayout"
-            android:layout_marginLeft="80dp"
+            android:layout_marginLeft="50dp"
             android:layout_toRightOf="@id/sportsIcon"
             android:text="JOIN GAME" />
 

@@ -62,7 +62,7 @@ public class BikeRentalFragment extends Fragment {
         call.enqueue(new Callback<BikeRental>() {
             @Override
             public void onResponse(Call<BikeRental> call, Response<BikeRental> response) {
-                Log.d(TAG, "onResponse: "+response.isSuccessful());
+                Log.d(TAG, "onResponse: " + response.isSuccessful());
 
                 BikeRental bikeRental = response.body();
                 List<Station> bikeLocations = bikeRental.getNetwork().getStations();
@@ -76,7 +76,6 @@ public class BikeRentalFragment extends Fragment {
 
             }
         });
-
 
 
     }

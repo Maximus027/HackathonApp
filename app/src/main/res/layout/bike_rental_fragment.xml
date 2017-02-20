@@ -5,17 +5,17 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/citi_bike_image_id"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/citibike_image"/>
+    <ImageView
+        android:id="@+id/citi_bike_image_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/citibike_image" />
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/bike_rental_rv"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/bike_rental_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-        </android.support.v7.widget.RecyclerView>
+    </android.support.v7.widget.RecyclerView>
 
 </LinearLayout>

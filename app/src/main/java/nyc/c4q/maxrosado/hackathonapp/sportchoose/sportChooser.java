@@ -10,7 +10,7 @@ import android.widget.GridView;
 import nyc.c4q.maxrosado.hackathonapp.Basketball;
 import nyc.c4q.maxrosado.hackathonapp.Handbal;
 import nyc.c4q.maxrosado.hackathonapp.R;
-import nyc.c4q.maxrosado.hackathonapp.Swimming;
+import nyc.c4q.maxrosado.hackathonapp.models.bike_models.BikeRental;
 
 public class sportChooser extends AppCompatActivity {
 
@@ -43,7 +43,7 @@ public class sportChooser extends AppCompatActivity {
                         startActivity(goToFootball);
                         break;
                     case 4:
-                        Intent goToBikes = new Intent(getApplicationContext(), Basketball.class);
+                        Intent goToBikes = new Intent(getApplicationContext(), BikeRental.class);
                         startActivity(goToBikes);
                         break;
                     case 5:

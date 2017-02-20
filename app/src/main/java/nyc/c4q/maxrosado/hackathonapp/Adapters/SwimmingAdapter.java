@@ -18,8 +18,8 @@ public class SwimmingAdapter extends RecyclerView.Adapter<SwimmingAdapter.MyView
     String[] bouroughNames = {"Manhattan", "Bronx", "Brooklyn", "Queens", "Staten Island",
             "Manhattan", "Bronx", "Brooklyn", "Queens", "Staten Island"};
     String[] dates = {"Thu Jan 28th ", "Mon Feb 28th ", "Fri Jan 28th ", "Wed Jan 28th "};
-    int[] sportsCons = {R.drawable.basketballicon, R.drawable.basketballicon, R.drawable.basketballicon,
-            R.drawable.basketballicon, R.drawable.basketballicon};
+    int[] sportsCons = {R.drawable.footballicon, R.drawable.footballicon, R.drawable.footballicon,
+            R.drawable.footballicon, R.drawable.footballicon};
     int[] peopleIcons = {R.drawable.usericon, R.drawable.usericon, R.drawable.usericon, R.drawable.usericon,
             R.drawable.usericon, R.drawable.usericon, R.drawable.usericon, R.drawable.usericon,
             R.drawable.usericon, R.drawable.usericon, R.drawable.usericon};
