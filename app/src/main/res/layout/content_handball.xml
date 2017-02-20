@@ -4,6 +4,6 @@
     android:id="@+id/fragment_content_handball_id"
     android:name="nyc.c4q.maxrosado.hackathonapp.tabFragments.handball.HandballActivityFragment"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:layout="@layout/fragment_handball" />

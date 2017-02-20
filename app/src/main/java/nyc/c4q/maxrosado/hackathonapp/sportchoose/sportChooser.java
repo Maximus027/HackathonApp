@@ -10,6 +10,8 @@ import android.widget.GridView;
 import nyc.c4q.maxrosado.hackathonapp.R;
 import nyc.c4q.maxrosado.hackathonapp.tabFragments.HomeActivity;
 import nyc.c4q.maxrosado.hackathonapp.tabFragments.bike.BikeRentalActivity;
+import nyc.c4q.maxrosado.hackathonapp.tabFragments.handball.HandballActivity;
+import nyc.c4q.maxrosado.hackathonapp.tabFragments.parks.ParksActivity;
 
 public class sportChooser extends AppCompatActivity {
 
@@ -24,13 +26,33 @@ public class sportChooser extends AppCompatActivity {
         gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View v,
                                     int position, long id) {
-                if (position < 4) {
-                    Intent intent = new Intent(sportChooser.this, HomeActivity.class);
-                    startActivity(intent);
-                } else {
-                    Intent intent = new Intent(sportChooser.this, BikeRentalActivity.class);
-                    startActivity(intent);
+                Class activityclass = HomeActivity.class;
+                Intent intent;
+
+                switch (position){
+                    case 0://Parks
+                        activityclass = ParksActivity.class;
+                        break;
+                    case 1://Basketball
+                        activityclass = HomeActivity.class;
+                        break;
+                    case 2://Handball
+                        activityclass = HandballActivity.class;
+                        break;
+                    case 3://Soccer
+                        activityclass = HomeActivity.class;
+                        break;
+                    case 4://Football
+                        activityclass = HomeActivity.class;
+                        break;
+                    case 5://Bikes
+                        activityclass = BikeRentalActivity.class;
+                        break;
+
                 }
+
+                intent = new Intent(sportChooser.this, activityclass);
+                    startActivity(intent);
 
                 }
             });
