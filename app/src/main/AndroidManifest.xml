@@ -2,13 +2,29 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="nyc.c4q.maxrosado.hackathonapp">
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission
+        android:name="nyc.c4q.maxrosado.hackathonapp.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HomeActivity">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".LocationActivity" />
+        <activity android:name=".sportchoose.sportChooser">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,6 +36,22 @@
         <activity android:name=".Football"></activity>
         <activity android:name=".Handbal"></activity>
         <activity android:name=".Swimming"></activity>
+        <activity android:name=".tabFragments.parks.ParksActivity">
+        </activity>
+        <activity android:name=".login.LoginMain"></activity>
+        <activity android:name=".login.LoginCreate" />
+        <activity android:name=".CreateGameActivity"></activity>
+        <activity android:name=".tabFragments.HomeActivity" >
+
+        </activity>
+        <activity android:name=".tabFragments.bike.BikeRentalActivity">
+
+        </activity>
+        <activity
+            android:name=".tabFragments.basketball.BasketballActivity"
+            android:label="@string/title_activity_basketball"
+            android:theme="@style/AppTheme.NoActionBar" />
+
     </application>
 
 </manifest>

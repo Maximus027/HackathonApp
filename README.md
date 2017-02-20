@@ -1,0 +1,10 @@
+# HackathonApp
+<p>
+<h2><b>FitNYC</b></h2><p>
+<b>The Team:</b><br />
+<i>Demo Lead: Queena Bergen</i><br />
+<i>Project Manager: Taryn King</i><br />
+<i>Design Lead: Eddie Melendez</i><br />
+<i>Tech Lead: Max Rosado</i><p><br />
+<b>Our Purpose</b><br />
+New York City is a thriving metropolis with a population that spans over eight million citizens. According to the Department of Health 56% of adults in NYC are either obese or overweight. Data has shown that obesity begins early on causing nearly half of all elementary school children to not be at healthy weight. Lack of fitness or physical activity is an issue much too common among New Yorkers. To battle this epedemic FitNYC aims to bring the social aspect missing in creating healthier habitual lifestyles. One of the difficulties we encounter when attempting to get into a routine again is the lack of a support group and many times activities that peek our interest. NYC has created the Be Fit NYC initiative that allows people to find and participate in free or low cost fitness activities such as walking groups, runs, yoga and Zumba classes. FitNYC will create a resource which allows people of NYC to find local sporting or fitness events specifically created by other New Yorkers. These activities can help others join a fitness group or a game either on the fly or in advanced. Even those looking to try something new will benefit when joining or hosting an event. Our solution allows anyone and everyone to take part in local pickup basketball games, soccer, football, handball , cycling and more. In such a busy city, finding the time or people to engage with can present itself as a challenge. FitNYC allows fitness and sport enthusiasts of all skill levels to engage others of similar interests while even exploring new activities they never have before. Physical activity doesn’t have to be expensive or inconvenient but it’s benefits are undoubtedly priceless. Creating a social aspect to staying fit will help achieve overall health, improving weight, mood, strengthening bones, muscles and even helping one sleep better. Together we can all be a fitter NYC.

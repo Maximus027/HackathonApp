@@ -1,10 +1,16 @@
-package nyc.c4q.maxrosado.hackathonapp;
+package nyc.c4q.maxrosado.hackathonapp.tabFragments;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+
+import nyc.c4q.maxrosado.hackathonapp.Basketball;
+import nyc.c4q.maxrosado.hackathonapp.Football;
+import nyc.c4q.maxrosado.hackathonapp.Handbal;
+import nyc.c4q.maxrosado.hackathonapp.R;
+import nyc.c4q.maxrosado.hackathonapp.Swimming;
 
 public class HomeActivity extends AppCompatActivity {
     private Button button;
@@ -52,4 +58,5 @@ public class HomeActivity extends AppCompatActivity {
         });
 
     }
+
 }

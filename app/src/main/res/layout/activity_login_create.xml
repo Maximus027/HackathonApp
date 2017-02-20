@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login_create"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/darkestGreenScheme"
+    android:orientation="vertical"
+    tools:context="nyc.c4q.maxrosado.hackathonapp.login.LoginCreate">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/new_email_request"
+        android:textColor="@color/White"
+        android:textSize="@dimen/textview_fontsize"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/email_logCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/edit_text_margin_bottom"
+        android:background="@color/White" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/new_Name_request"
+        android:textColor="@color/White"
+        android:textSize="@dimen/textview_fontsize"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/name_logCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/edit_text_margin_bottom"
+        android:background="@color/White" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/new_zip_request"
+        android:textColor="@color/White"
+        android:textSize="@dimen/textview_fontsize"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/zip_logCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/edit_text_margin_bottom"
+        android:background="@color/White" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/new_bday_request"
+        android:textColor="@color/White"
+        android:textSize="@dimen/textview_fontsize"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+    <DatePicker
+        android:id="@+id/dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        />
+    <Button
+        android:id="@+id/create_submit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/submit_btn"
+        android:onClick="submitBtn"/>
+
+</LinearLayout>

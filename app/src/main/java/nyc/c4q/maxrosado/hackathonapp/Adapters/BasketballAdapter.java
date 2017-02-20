@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import nyc.c4q.maxrosado.hackathonapp.R;
 
+
 /**
  * Created by queenabergen on 2/18/17.
  */
@@ -19,8 +20,8 @@ public class BasketballAdapter extends RecyclerView.Adapter<BasketballAdapter.My
     ImageView imageView;
     String[] bouroughNames = {"Manhattan", "Bronx", "Brooklyn", "Queens", "Staten Island",
             "Manhattan", "Bronx", "Brooklyn", "Queens", "Staten Island"};
-    String[] dates = {"Thu Jan 28th ", "Mon Feb 28th ", "Fri Jan 28th ", "Wed Jan 28th ",
-            "Thu Jan 28th ", "Mon Feb 28th ", "Fri Jan 28th ", "Wed Jan 28th "};
+    String[] dates = {"Thu Jan 28th ", "Mon Feb 28th ", "Fri Jan 28th ", "Wed Jan 28th ", "Wed Jan 28th ",
+            "Thu Jan 29th ", "Thu Jan 29th", "Thu Jan 29th", "Thu Han 29th", "Thu Jan 29th"};
     int[] sportsCons = {R.drawable.basketballicon, R.drawable.basketballicon, R.drawable.basketballicon,
             R.drawable.basketballicon, R.drawable.basketballicon};
     int[] peopleIcons = {R.drawable.usericon, R.drawable.usericon, R.drawable.usericon, R.drawable.usericon,
@@ -76,7 +77,8 @@ public class BasketballAdapter extends RecyclerView.Adapter<BasketballAdapter.My
 
     @Override
     public int getItemCount() {
-        return bouroughNames.length + 5 ;
+        return bouroughNames.length;
     }
+
 
 }
