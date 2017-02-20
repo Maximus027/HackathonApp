@@ -31,6 +31,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".Basketball"></activity>
+        <activity android:name=".Football"></activity>
+        <activity android:name=".Handbal"></activity>
+        <activity android:name=".Swimming"></activity>
         <activity android:name=".tabFragments.parks.ParksActivity">
         </activity>
         <activity android:name=".login.LoginMain"></activity>
@@ -49,8 +54,6 @@
             android:name=".tabFragments.basketball.BasketballActivity"
             android:label="@string/title_activity_basketball"
             android:theme="@style/AppTheme.NoActionBar" />
-
-
 
     </application>
 

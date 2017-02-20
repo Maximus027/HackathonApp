@@ -10,24 +10,19 @@ import android.widget.TextView;
 
 import nyc.c4q.maxrosado.hackathonapp.R;
 
-
 /**
  * Created by queenabergen on 2/18/17.
  */
 
-public class BasketballAdapter extends RecyclerView.Adapter<BasketballAdapter.MyViewHolder> {
-
-    ImageView imageView;
+public class SwimmingAdapter extends RecyclerView.Adapter<SwimmingAdapter.MyViewHolder> {
     String[] bouroughNames = {"Manhattan", "Bronx", "Brooklyn", "Queens", "Staten Island",
             "Manhattan", "Bronx", "Brooklyn", "Queens", "Staten Island"};
-    String[] dates = {"Thu Jan 28th ", "Mon Feb 28th ", "Fri Jan 28th ", "Wed Jan 28th ", "Wed Jan 28th ",
-            "Thu Jan 29th ", "Thu Jan 29th", "Thu Jan 29th", "Thu Han 29th", "Thu Jan 29th"};
+    String[] dates = {"Thu Jan 28th ", "Mon Feb 28th ", "Fri Jan 28th ", "Wed Jan 28th "};
     int[] sportsCons = {R.drawable.basketballicon, R.drawable.basketballicon, R.drawable.basketballicon,
             R.drawable.basketballicon, R.drawable.basketballicon};
     int[] peopleIcons = {R.drawable.usericon, R.drawable.usericon, R.drawable.usericon, R.drawable.usericon,
             R.drawable.usericon, R.drawable.usericon, R.drawable.usericon, R.drawable.usericon,
             R.drawable.usericon, R.drawable.usericon, R.drawable.usericon};
-
     private ImageView userImage;
     private ImageView sportsIcon;
     private ImageView oneperson;
@@ -45,7 +40,6 @@ public class BasketballAdapter extends RecyclerView.Adapter<BasketballAdapter.My
         public MyViewHolder(View itemView) {
             super(itemView);
             userImage = (ImageView) itemView.findViewById(R.id.userImage);
-            imageView = (ImageView) itemView.findViewById(R.id.logoBanner);
             sportsIcon = (ImageView) itemView.findViewById(R.id.sportsIcon);
             oneperson = (ImageView) itemView.findViewById(R.id.onePerson);
             twoperson = (ImageView) itemView.findViewById(R.id.twoPerson);
@@ -60,13 +54,13 @@ public class BasketballAdapter extends RecyclerView.Adapter<BasketballAdapter.My
     }
 
     @Override
-    public BasketballAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public SwimmingAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.sportsholder, parent, false);
-        return new MyViewHolder(itemView);
+        return new SwimmingAdapter.MyViewHolder(itemView);
     }
 
     @Override
-    public void onBindViewHolder(BasketballAdapter.MyViewHolder holder, int position) {
+    public void onBindViewHolder(SwimmingAdapter.MyViewHolder holder, int position) {
         sportsIcon.setImageResource(sportsCons[position]);
         oneperson.setImageResource(peopleIcons[position]);
         twoperson.setImageResource(peopleIcons[position]);
@@ -79,6 +73,4 @@ public class BasketballAdapter extends RecyclerView.Adapter<BasketballAdapter.My
     public int getItemCount() {
         return bouroughNames.length;
     }
-
-
 }

@@ -19,7 +19,18 @@
         <item>4</item>
         <item>5</item>
         <item>6</item>
-
+    </string-array>
+    <string-array name="skill">
+        <item>Beginner</item>
+        <item>Intermediate</item>
+        <item>Expert</item>
+    </string-array>
+    <string-array name="Sports">
+        <item>Basketball</item>
+        <item>Football</item>
+        <item>Handball</item>
+        <item>Swimming</item>
+        <item>Soccer</item>
     </string-array>
     <string name="title_activity_basketball">BasketballActivity</string>
     <string name="action_settings">Settings</string>
