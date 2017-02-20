@@ -15,6 +15,7 @@ import nyc.c4q.maxrosado.hackathonapp.R;
  */
 
 public class BasketballAdapter extends RecyclerView.Adapter<BasketballAdapter.MyViewHolder> {
+
     ImageView imageView;
     String[] bouroughNames = {"Manhattan", "Bronx", "Brooklyn", "Queens", "Staten Island",
             "Manhattan", "Bronx", "Brooklyn", "Queens", "Staten Island"};
