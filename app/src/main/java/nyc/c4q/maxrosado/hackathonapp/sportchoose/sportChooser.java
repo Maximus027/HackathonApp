@@ -7,9 +7,10 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
+import nyc.c4q.maxrosado.hackathonapp.Basketball;
+import nyc.c4q.maxrosado.hackathonapp.Handbal;
 import nyc.c4q.maxrosado.hackathonapp.R;
-import nyc.c4q.maxrosado.hackathonapp.tabFragments.HomeActivity;
-import nyc.c4q.maxrosado.hackathonapp.tabFragments.bike.BikeRentalActivity;
+import nyc.c4q.maxrosado.hackathonapp.Swimming;
 
 public class sportChooser extends AppCompatActivity {
 
@@ -24,12 +25,29 @@ public class sportChooser extends AppCompatActivity {
         gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View v,
                                     int position, long id) {
-                if (position < 4) {
-                    Intent intent = new Intent(sportChooser.this, HomeActivity.class);
-                    startActivity(intent);
-                } else {
-                    Intent intent = new Intent(sportChooser.this, BikeRentalActivity.class);
-                    startActivity(intent);
+                switch(position){
+                    case 0:
+                        Intent goToBasketball = new Intent(getApplicationContext(), Basketball.class);
+                        startActivity(goToBasketball);
+                        break;
+                    case 1:
+                        Intent goToHandball = new Intent(getApplicationContext(), Handbal.class);
+                        startActivity(goToHandball);
+                        break;
+                    case 2:
+                        Intent goToSoccer = new Intent(getApplicationContext(), Soccer.class);
+                        startActivity(goToSoccer);
+                        break;
+                    case 3:
+                        Intent goToFootball = new Intent(getApplicationContext(), Basketball.class);
+                        startActivity(goToFootball);
+                        break;
+                    case 4:
+                        Intent goToBikes = new Intent(getApplicationContext(), Basketball.class);
+                        startActivity(goToBikes);
+                        break;
+                    case 5:
+                        break;
                 }
 
                 }
