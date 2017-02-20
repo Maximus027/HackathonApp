@@ -42,6 +42,9 @@
         <activity android:name=".CreateGameActivity" />
         <activity android:name=".tabFragments.HomeActivity"></activity>
         <activity android:name=".tabFragments.bike.BikeRentalActivity"></activity>
+        <activity android:name=".tabFragments.handball.HandballActivity">
+
+        </activity>
         <activity
             android:name=".tabFragments.basketball.BasketballActivity"
             android:label="@string/title_activity_basketball"
