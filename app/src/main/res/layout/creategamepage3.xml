@@ -2,10 +2,10 @@
 <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="600dp"
+    android:layout_height="550dp"
     android:layout_marginLeft="7dp"
     android:layout_marginRight="7dp"
-    android:layout_marginTop="7dp"
+    android:layout_marginTop="20dp"
     android:background="@color/White"
     android:orientation="vertical">
 
@@ -15,36 +15,38 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
             android:alpha="10"
             android:gravity="center_horizontal"
-            android:text="Select Date  : "
+            android:text="SELECT TIME  : "
             android:textColor="@color/black"
             android:textSize="15dp"
             android:textStyle="bold" />
 
-        <DatePicker
-            android:id="@+id/dateSelector"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:datePickerMode="calendar" />
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layoutMode="clipBounds"
+            android:timePickerMode="clock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
+        </TimePicker>
 
         <android.support.v7.widget.CardView
-            android:id="@+id/CONTINUEBTN"
+            android:id="@+id/SUBMITBTN"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:layout_below="@id/SKILLNAMESPACE"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:layout_marginTop="15dp">
+            android:layout_marginTop="30dp">
 
             <Button
-                android:id="@+id/continuebtn"
+                android:id="@+id/continbtn"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/lightGreenScheme"

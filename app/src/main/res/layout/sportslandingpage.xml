@@ -8,7 +8,7 @@
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar_layout"
         android:layout_width="match_parent"
-        android:layout_height="280dp">
+        android:layout_height="wrap_content">
 
         <android.support.design.widget.CollapsingToolbarLayout
             android:id="@+id/collapsing_toolbar"
@@ -26,17 +26,24 @@
                 android:scaleType="fitXY"
                 app:layout_collapseMode="pin"
                 app:layout_collapseParallaxMultiplier="0.7" />
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:src="@drawable/plusicon"
+                android:layout_height="50dp"
+                android:layout_width="50dp"
+                app:layout_anchor="@id/collapsing_toolbar"
+                app:layout_anchorGravity="bottom|right|end" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/htab_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:gravity="top"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:titleMarginTop="13dp"/>
 
         </android.support.design.widget.CollapsingToolbarLayout>
-
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/fab"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="300dp"
-            android:layout_marginTop="3dp"
-            android:src="@drawable/plusicon"
-            app:fabSize="auto" />
     </android.support.design.widget.AppBarLayout>
 
     <android.support.v7.widget.RecyclerView

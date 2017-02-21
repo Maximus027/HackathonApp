@@ -16,7 +16,7 @@ import nyc.c4q.maxrosado.hackathonapp.R;
 
 public class FootballAdapter extends RecyclerView.Adapter<FootballAdapter.MyViewHolder> {
 
-    
+
     String[] bouroughNames = {"Manhattan", "Queens", "Bronx"};
     String[] times = {"12:30 PM", "9:30AM", "1:30PM"};
     String[] dates = {"Thu Feb 28th ", "Friday November 3rd", "Tuesday July 8th"};

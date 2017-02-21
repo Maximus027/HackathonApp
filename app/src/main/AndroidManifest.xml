@@ -41,6 +41,7 @@
         <activity android:name=".login.LoginCreate" />
         <activity android:name=".CreateGameActivity" />
         <activity android:name=".CreateGameActivity2" />
+        <activity android:name=".CreateGameActivity3" />
         <activity android:name=".tabFragments.HomeActivity"></activity>
         <activity android:name=".tabFragments.bike.BikeRentalActivity"></activity>
         <activity android:name=".tabFragments.handball.HandballActivity">

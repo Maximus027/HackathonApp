@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/createGameScroolView"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/darkestGreenScheme"
+    android:layout_height="700dp"
+    android:layout_marginLeft="7dp"
+    android:layout_marginRight="7dp"
     android:orientation="vertical">
 
     <RelativeLayout
         android:id="@+id/fulllayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/White"
         android:orientation="vertical">
 
         <ImageView
             android:id="@+id/createGameTag"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="50dp"
             android:src="@drawable/creategametag" />
 
         <TextView
@@ -22,8 +27,10 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_below="@id/createGameTag"
-            android:background="@color/White"
-            android:gravity="center_horizontal" />
+            android:alpha="10"
+            android:gravity="center_horizontal"
+            android:shadowColor="@color/black"
+            android:textColor="@color/black" />
 
         <LinearLayout
             android:id="@+id/NAMELAYOUT"
@@ -36,43 +43,18 @@
             android:gravity="center_horizontal"
             android:orientation="horizontal">
 
-            <android.support.v7.widget.CardView
-                android:id="@+id/NAMESPACE"
+
+            <EditText
+                android:id="@+id/gameCreatorName"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:elevation="10dp">
-
-                <TextView
-                    android:id="@+id/NAMESPACE1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:ems="10"
-                    android:gravity="center_horizontal"
-                    android:inputType="textPersonName"
-                    android:text="NAME :"
-                    android:textStyle="bold" />
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:id="@+id/NAMECARD"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_weight="1"
-                android:elevation="10dp">
-
-                <EditText
-                    android:id="@+id/gameCreatorName"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:hint="Name"
-                    android:inputType="textPersonName" />
-            </android.support.v7.widget.CardView>
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:shadowColor="@color/White"
+                android:shadowDx="10"
+                android:textColor="@color/black" />
 
         </LinearLayout>
 
@@ -87,39 +69,23 @@
             android:layout_marginTop="10dp"
             android:orientation="horizontal">
 
-            <android.support.v7.widget.CardView
-                android:id="@+id/SPORTSNAMESPACE"
-                android:layout_width="176dp"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="10dp"
-                android:layout_marginRight="10dp">
-
-                <TextView
-                    android:id="@+id/SPORTNAMESPACE2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center_horizontal"
-                    android:text="SELECT SPORT :"
-                    android:textStyle="bold" />
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:id="@+id/SPORTSSELECT"
+            <TextView
+                android:id="@+id/sportsTextView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:text="Select Sport :"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
 
-                <Spinner
-                    android:id="@+id/sportsSelect"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:dropDownSelector="@color/darkestGreenScheme" />
+            <Spinner
+                android:id="@+id/sportsSelect"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:dropDownSelector="@color/darkestGreenScheme" />
 
-            </android.support.v7.widget.CardView>
 
         </LinearLayout>
 
@@ -128,56 +94,69 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/SPORTSLAYOUT"
+            android:layout_marginBottom="30dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp">
 
-            <android.support.v7.widget.CardView
-                android:id="@+id/skillnamespace"
-                android:layout_width="176dp"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="10dp"
-                android:layout_marginRight="10dp">
-
-                <TextView
-                    android:id="@+id/skillNameSpace"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center_horizontal"
-                    android:text="SKILL LEVEL :"
-                    android:textStyle="bold" />
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:id="@+id/SKILLSELECT"
+            <TextView
+                android:id="@+id/skillSelectTextView"
                 android:layout_width="match_parent"
-                android:layout_height="40dp">
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Choose Skill Level :"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
 
-                <Spinner
-                    android:id="@+id/skillLevel"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-            </android.support.v7.widget.CardView>
+            <Spinner
+                android:id="@+id/skillLevel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
 
         </LinearLayout>
 
 
-        <android.support.v7.widget.CardView
-            android:id="@+id/CONTINUEBTN"
+        <LinearLayout
+            android:id="@+id/EQUIPMENTNAMESPACE"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_below="@id/SKILLNAMESPACE"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="30dp">
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SKILLNAMESPACE"
+            android:layout_marginBottom="99dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
 
-            <Button
-                android:id="@+id/continbtn"
+            <TextView
+                android:id="@+id/equipmentTextView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/lightGreenScheme"
-                android:text="CONTINUE" />
-        </android.support.v7.widget.CardView>
+                android:layout_weight="1"
+                android:text="Do you have equipment ? :"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/equipmentReponse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/continbtn"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/EQUIPMENTNAMESPACE"
+            android:layout_marginBottom="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/middleGreenScheme"
+            android:text="CONTINUE" />
 
 
     </RelativeLayout>
