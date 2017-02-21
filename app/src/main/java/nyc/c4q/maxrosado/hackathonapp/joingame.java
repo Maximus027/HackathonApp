@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Joingame extends AppCompatActivity {
-CreateFitEventDatabaseHelper myDataBase;
+    CreateFitEventDatabaseHelper myDataBase;
     private View btnAddData;
 
     @Override
@@ -16,7 +16,12 @@ CreateFitEventDatabaseHelper myDataBase;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.joingame);
         myDataBase = new CreateFitEventDatabaseHelper(this);
-
+/*
+        Picasso.with(getApplicationContext()).load(R.drawable.bluegradientbackground).into(imageView2);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitleMarginStart(360);
+        toolbar.setTitle(R.string.toolbar);
+ */
 
         List<String> categories = new ArrayList<String>();
         categories.add("Basketball");
