@@ -10,6 +10,7 @@
 
     <RelativeLayout
         android:id="@+id/fulllayout"
+        android:animateLayoutChanges="true"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="10dp"
@@ -179,7 +180,7 @@
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_below="@+id/EQUIPMENTNAMESPACE"
-            android:layout_marginBottom="60dp"
+            android:layout_marginBottom="30dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:background="@color/middleGreenScheme"

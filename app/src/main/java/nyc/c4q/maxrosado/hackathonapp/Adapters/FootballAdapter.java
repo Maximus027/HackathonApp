@@ -21,15 +21,9 @@ public class FootballAdapter extends RecyclerView.Adapter<FootballAdapter.MyView
     String[] times = {"12:30 PM", "9:30AM", "1:30PM"};
     String[] dates = {"Thu Feb 28th ", "Friday November 3rd", "Tuesday July 8th"};
     int[] sportsCons = {R.drawable.footballicon, R.drawable.footballicon, R.drawable.footballicon};
-    int[] peopleIcons = {R.drawable.usericon, R.drawable.usericon, R.drawable.usericon};
     int[] userImageList = {R.drawable.user5, R.drawable.user6, R.drawable.user7, R.drawable.user8};
     private ImageView userImage;
     private ImageView sportsIcon;
-    private ImageView oneperson;
-    private ImageView twoperson;
-    private ImageView threeperson;
-    private ImageView fourperson;
-    private ImageView additionalTeam;
     private TextView cityNames;
     private TextView dateOfGame;
     private TextView timeofGame;
@@ -43,11 +37,6 @@ public class FootballAdapter extends RecyclerView.Adapter<FootballAdapter.MyView
             timeofGame = (TextView) itemView.findViewById(R.id.timeView);
             userImage = (ImageView) itemView.findViewById(R.id.userImage);
             sportsIcon = (ImageView) itemView.findViewById(R.id.sportsIcon);
-            oneperson = (ImageView) itemView.findViewById(R.id.onePerson);
-            twoperson = (ImageView) itemView.findViewById(R.id.twoPerson);
-            threeperson = (ImageView) itemView.findViewById(R.id.threePerson);
-            fourperson = (ImageView) itemView.findViewById(R.id.fourPerson);
-            additionalTeam = (ImageView) itemView.findViewById(R.id.fourPerson);
             cityNames = (TextView) itemView.findViewById(R.id.bouroughOfGame);
             dateOfGame = (TextView) itemView.findViewById(R.id.dateOfGame);
             button = (Button) itemView.findViewById(R.id.joingameBTN);
@@ -66,9 +55,6 @@ public class FootballAdapter extends RecyclerView.Adapter<FootballAdapter.MyView
         timeofGame.setText(times[position]);
         userImage.setImageResource(userImageList[position]);
         sportsIcon.setImageResource(sportsCons[position]);
-        oneperson.setImageResource(peopleIcons[position]);
-        twoperson.setImageResource(peopleIcons[position]);
-        threeperson.setImageResource(peopleIcons[position]);
         cityNames.setText(bouroughNames[position]);
         dateOfGame.setText(dates[position]);
     }

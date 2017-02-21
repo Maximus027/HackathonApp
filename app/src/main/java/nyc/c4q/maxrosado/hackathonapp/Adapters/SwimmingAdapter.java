@@ -41,11 +41,6 @@ public class SwimmingAdapter extends RecyclerView.Adapter<SwimmingAdapter.MyView
             super(itemView);
             userImage = (ImageView) itemView.findViewById(R.id.userImage);
             sportsIcon = (ImageView) itemView.findViewById(R.id.sportsIcon);
-            oneperson = (ImageView) itemView.findViewById(R.id.onePerson);
-            twoperson = (ImageView) itemView.findViewById(R.id.twoPerson);
-            threeperson = (ImageView) itemView.findViewById(R.id.threePerson);
-            fourperson = (ImageView) itemView.findViewById(R.id.fourPerson);
-            additionalTeam = (ImageView) itemView.findViewById(R.id.fourPerson);
             cityNames = (TextView) itemView.findViewById(R.id.bouroughOfGame);
             dateOfGame = (TextView) itemView.findViewById(R.id.dateOfGame);
             button = (Button) itemView.findViewById(R.id.joingameBTN);

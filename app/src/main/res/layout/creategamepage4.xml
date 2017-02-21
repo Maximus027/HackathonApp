@@ -13,27 +13,22 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="7dp"
-        android:layout_marginTop="30dp"
+        android:animateLayoutChanges="true"
         android:background="@color/White"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/description"
+        <ImageView
+            android:id="@+id/createGameTag"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_below="@id/createGameTag"
-            android:layout_marginTop="10dp"
-            android:alpha="10"
-            android:gravity="center_horizontal"
-            android:shadowColor="@color/black"
-            android:textColor="@color/black" />
+            android:layout_height="50dp"
+            android:src="@drawable/creategametag" />
 
 
         <LinearLayout
             android:id="@+id/PLAYERSLAYOUT"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/NAMELAYOUT"
+            android:layout_below="@+id/createGameTag"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_marginTop="10dp"
@@ -91,11 +86,21 @@
 
 
         <Button
-            android:id="@+id/continuebtn"
+            android:id="@+id/addImage"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_below="@+id/COMMENTSLAYOUT"
-            android:layout_marginTop="80dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/middleGreenScheme"
+            android:text="ADD IMAGE " />
+
+        <Button
+            android:id="@+id/createbtn"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/addImage"
             android:layout_marginBottom="30dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"

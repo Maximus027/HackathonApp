@@ -37,4 +37,8 @@
     <string name="title_activity_handball">HandballActivity</string>
     <string name="title_activity_parks">ParksActivity</string>
     <string name="toolbar">FIT NYC</string>
+    <string name="dialog_message">Are you sure you want to delete your game ?</string>
+    <string name="dialog_title">Delete Handball Game</string>
+    <string name="No">No</string>
+    <string name="Yes">yes</string>
 </resources>

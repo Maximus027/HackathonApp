@@ -6,19 +6,19 @@ import android.os.Bundle;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class CreateGameActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
+public class CreateGameActivity extends AppCompatActivity {
     CreateFitEventDatabaseHelper myDataBase;
+    RelativeLayout creategamepage1;
     Spinner sportsSelect;
     Spinner skillLevel;
     Spinner yesNoSpinner;
@@ -32,6 +32,10 @@ public class CreateGameActivity extends AppCompatActivity implements AdapterView
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.creategame);
+
+        creategamepage1 = (RelativeLayout) findViewById(R.id.fulllayout);
+
+
         textView = (TextView) findViewById(R.id.description);
         textView.setText("Create Your Game, Have People Join, Get ACTIVE !");
         nameofGamer = (EditText) findViewById(R.id.gameCreatorName);
@@ -78,15 +82,5 @@ public class CreateGameActivity extends AppCompatActivity implements AdapterView
         sportsSelect.setAdapter(dataAdapter);
 
 
-    }
-
-    @Override
-    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        parent.getItemAtPosition(position);
-        if (position == 1) {
-            Toast.makeText(getApplicationContext(), "Show Next Button", Toast.LENGTH_LONG).show();
-        } else {
-            Toast.makeText(getApplicationContext(), "Show Nothing", Toast.LENGTH_LONG).show();
-        }
     }
 }

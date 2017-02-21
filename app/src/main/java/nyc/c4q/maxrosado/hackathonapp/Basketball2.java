@@ -10,18 +10,18 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import nyc.c4q.maxrosado.hackathonapp.Adapters.BasketballAdapter;
+import nyc.c4q.maxrosado.hackathonapp.Adapters.BasketBallAadapter2;
 import nyc.c4q.maxrosado.hackathonapp.sportchoose.sportChooser;
 
 /**
- * Created by queenabergen on 2/18/17.
+ * Created by queenabergen on 2/21/17.
  */
 
-public class Basketball extends Activity {
+public class Basketball2 extends Activity {
     ArrayAdapter<String> dataAdapter;
     private RecyclerView recyclerView;
     private LinearLayoutManager linearLayoutManager;
-    BasketballAdapter basketballAdapter;
+    BasketBallAadapter2 basketballAdapter;
     private ImageView imageView;
     private Button createGame;
     private ImageView backBtn;
@@ -53,7 +53,7 @@ public class Basketball extends Activity {
 
         recyclerView = (RecyclerView) findViewById(R.id.sportsRecView);
         linearLayoutManager = new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false);
-        basketballAdapter = new BasketballAdapter();
+        basketballAdapter = new BasketBallAadapter2();
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(basketballAdapter);
     }

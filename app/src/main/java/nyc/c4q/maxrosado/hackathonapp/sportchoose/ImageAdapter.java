@@ -51,7 +51,7 @@ public class ImageAdapter extends BaseAdapter {
             R.drawable.park_grn_txt,
             R.drawable.bball_grn_text, R.drawable.handball_grn_txt,
             R.drawable.soccer_grn_txt, R.drawable.throwball_football_crop_txt,
-            R.drawable.bicycle2
+            R.drawable.bicycle2,
     };
 
 }

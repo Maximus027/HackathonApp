@@ -112,11 +112,11 @@
             android:id="@+id/joingameBTN"
             android:layout_width="160dp"
             android:layout_height="40dp"
-            android:background="@color/lightGreenScheme"
             android:layout_below="@id/personIconLayout"
             android:layout_marginLeft="65dp"
             android:layout_toRightOf="@id/sportsIcon"
-            android:text="DELETE GAME" />
+            android:background="@color/lightGreenScheme"
+            android:text="UNJOIN GAME" />
 
     </RelativeLayout>
 </android.support.v7.widget.CardView>

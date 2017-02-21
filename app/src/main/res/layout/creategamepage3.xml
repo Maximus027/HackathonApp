@@ -2,7 +2,7 @@
 <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="550dp"
+    android:layout_height="wrap_content"
     android:layout_marginLeft="7dp"
     android:layout_marginRight="7dp"
     android:layout_marginTop="20dp"
@@ -10,15 +10,22 @@
     android:orientation="vertical">
 
     <LinearLayout
+        android:id="@+id/TIMELAYOUT"
+        android:animateLayoutChanges="true"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+        <ImageView
+            android:id="@+id/createGameTag"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/creategametag" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="20dp"
             android:layout_marginTop="10dp"
             android:alpha="10"
             android:gravity="center_horizontal"
@@ -40,11 +47,11 @@
             android:id="@+id/continuebtn"
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:layout_below="@+id/EQUIPMENTNAMESPACE"
+            android:layout_below="@+id/timePicker"
             android:layout_marginBottom="20dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="30dp"
             android:background="@color/middleGreenScheme"
             android:text="CONTINUE" />
 

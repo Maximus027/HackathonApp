@@ -21,8 +21,7 @@
             android:layout_width="155dp"
             android:layout_height="20dp"
             android:layout_marginBottom="5dp"
-            android:gravity="center_horizontal"
-            android:text="Michael" />
+            android:gravity="center_horizontal" />
 
         <ImageView
             android:id="@+id/userImage"
@@ -101,30 +100,10 @@
             android:layout_toRightOf="@id/userImage"
             android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/onePerson"
+            <TextView
+                android:id="@+id/fractionOfPlayers"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-
-            <ImageView
-                android:id="@+id/twoPerson"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-
-            <ImageView
-                android:id="@+id/threePerson"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-
-            <ImageView
-                android:id="@+id/fourPerson"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/plusicon" />
+                android:layout_height="match_parent" />
 
         </LinearLayout>
 

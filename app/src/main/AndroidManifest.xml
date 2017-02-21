@@ -4,6 +4,8 @@
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -32,6 +34,7 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".Basketball" />
+        <activity android:name=".Basketball2" />
         <activity android:name=".Football" />
         <activity android:name=".Handbal" />
         <activity android:name=".Swimming" />
@@ -44,13 +47,14 @@
         <activity android:name=".CreateGameActivity3" />
         <activity android:name=".tabFragments.HomeActivity" />
         <activity android:name=".tabFragments.bike.BikeRentalActivity" />
-        <activity android:name=".tabFragments.handball.HandballActivity"></activity>
+        <activity android:name=".tabFragments.handball.HandballActivity" />
         <activity
             android:name=".tabFragments.basketball.BasketballActivity"
             android:label="@string/title_activity_basketball"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Joingame" />
-        <activity android:name=".CreateGameActivity4"></activity>
+        <activity android:name=".CreateGameActivity4" />
+        <activity android:name=".Handball2"></activity>
     </application>
 
 </manifest>

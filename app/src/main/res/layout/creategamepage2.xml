@@ -10,9 +10,16 @@
     android:orientation="vertical">
 
     <LinearLayout
+        android:id="@+id/DATELAYOUT"
         android:layout_width="match_parent"
+        android:animateLayoutChanges="true"
         android:layout_height="match_parent"
         android:orientation="vertical">
+        <ImageView
+            android:id="@+id/createGameTag"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/creategametag" />
 
         <TextView
             android:layout_width="match_parent"
