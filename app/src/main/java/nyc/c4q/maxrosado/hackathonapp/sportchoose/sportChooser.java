@@ -6,19 +6,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.Toast;
 
 import nyc.c4q.maxrosado.hackathonapp.Basketball;
 import nyc.c4q.maxrosado.hackathonapp.Football;
 import nyc.c4q.maxrosado.hackathonapp.Handbal;
 import nyc.c4q.maxrosado.hackathonapp.R;
-import nyc.c4q.maxrosado.hackathonapp.models.bike_models.BikeRental;
-
 import nyc.c4q.maxrosado.hackathonapp.tabFragments.HomeActivity;
 import nyc.c4q.maxrosado.hackathonapp.tabFragments.bike.BikeRentalActivity;
-import nyc.c4q.maxrosado.hackathonapp.tabFragments.handball.HandballActivity;
 import nyc.c4q.maxrosado.hackathonapp.tabFragments.parks.ParksActivity;
-
-import nyc.c4q.maxrosado.hackathonapp.Swimming;
 
 
 public class SportChooser extends AppCompatActivity {
@@ -34,7 +30,6 @@ public class SportChooser extends AppCompatActivity {
         gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View v,
                                     int position, long id) {
-<<<<<<< HEAD
                 if (position < 4) {
                     Intent intent = new Intent(SportChooser.this, HomeActivity.class);
                     startActivity(intent);
@@ -42,7 +37,6 @@ public class SportChooser extends AppCompatActivity {
                     Toast.makeText(SportChooser.this, "" + position,
                             Toast.LENGTH_SHORT).show();
                 }
-=======
 //                 Class goToactivity = HomeActivity.class;
 //                 Intent activityChosen;
 
@@ -94,7 +88,6 @@ public class SportChooser extends AppCompatActivity {
                         Intent goToBikes = new Intent(getApplicationContext(), BikeRentalActivity.class);
                         startActivity(goToBikes);
                         break;
->>>>>>> 37ee1258fdb5c8db86973b98d5013d31c756bc5a
 
                 }
 
