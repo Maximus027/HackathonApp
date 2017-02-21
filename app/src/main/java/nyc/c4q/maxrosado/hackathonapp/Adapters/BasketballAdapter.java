@@ -26,8 +26,8 @@ public class BasketballAdapter extends RecyclerView.Adapter<BasketballAdapter.My
     ImageView imageView;
     String[] playerNumbers = {"2 / 10"};
     String[] bouroughNames = {"Manhattan"};
-    String[] times = {"12:30 PM"};
-    String[] dates = {"Friday Feb 28th "};
+    String[] times = {"12:30"};
+    String[] dates = {"Tuesday Feb 28th "};
     int[] sportsCons = {R.drawable.basketballicon1};
     int[] userImageList = {R.drawable.user1};
     private Context mContext;

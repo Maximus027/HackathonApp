@@ -16,6 +16,7 @@ public class CreateGameActivity3 extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.creategamepage3);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         button = (Button) findViewById(R.id.continuebtn);
         button.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -23,6 +23,7 @@ public class CreateGameActivity4 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.creategamepage4);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         imageView2 = (ImageView) findViewById(R.id.header);
         getImage = (Button) findViewById(R.id.addImage);
         getImage.setOnClickListener(new View.OnClickListener() {

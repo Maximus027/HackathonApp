@@ -25,7 +25,7 @@ public class BasketBallAadapter2 extends RecyclerView.Adapter<BasketBallAadapter
     String[] playerNumbers = {"2 / 10"};
     String[] bouroughNames = {"Manhattan"};
     String[] times = {"12:30"};
-    String[] dates = {"Tues Feb 28th "};
+    String[] dates = {"Tuesday Feb 28th "};
     int[] sportsCons = {R.drawable.basketballicon1};
     int[] userImageList = {R.drawable.user1};
     private Context mContext;
