@@ -10,12 +10,6 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-
-import java.util.ArrayList;
-import java.util.List;
-
 import nyc.c4q.maxrosado.hackathonapp.Adapters.BasketballAdapter;
 
 /**
@@ -29,10 +23,7 @@ public class Basketball extends Activity {
     BasketballAdapter basketballAdapter;
     private ImageView imageView;
     private FloatingActionButton floatingActionButton;
-
-    List<String> dateofGames = new ArrayList<>();
-    DatabaseReference mRootRef = FirebaseDatabase.getInstance().getReference();
-    DatabaseReference mCondition = mRootRef.child("Date");
+    
 
 
     @Override

@@ -1,75 +1,85 @@
 package nyc.c4q.maxrosado.hackathonapp;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.DatePicker;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.TimePicker;
-
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class CreateGameActivity extends AppCompatActivity {
-    DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
-    DatabaseReference mConditionRef = databaseReference.child("Date");
-
+    CreateFitEventDatabaseHelper myDataBase;
     Spinner sportsSelect;
+    Spinner skillLevel;
+    Button submitBtn;
     EditText nameofGamer;
-    DatePicker dateSelect;
-    TimePicker timeSelect;
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        mConditionRef.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
-
-    }
+    TextView textView;
+    Button continueBtn;
 
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.creategame);
-
+        textView = (TextView)findViewById(R.id.description);
+        textView.setText("Create Your Game, Have People Join, Get ACTIVE Together");
         nameofGamer = (EditText) findViewById(R.id.gameCreatorName);
-        String name = nameofGamer.getText().toString();
-        dateSelect = (DatePicker) findViewById(R.id.dateSelector);
-        int month = dateSelect.getMonth();
-        int day = dateSelect.getDayOfMonth();
-        int year = dateSelect.getYear();
-        timeSelect = (TimePicker) findViewById(R.id.timePicker);
+        skillLevel = (Spinner) findViewById(R.id.skillLevel);
+        continueBtn = (Button)findViewById(R.id.continbtn);
+        continueBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               Intent intent = new Intent(getApplicationContext(), CreateGameActivity2.class);
+                startActivity(intent);
+            }
+        });
 
-        List<String> categories = new ArrayList<String>();
-        categories.add("Basketball");
-        categories.add("Football");
-        categories.add("Soccer");
-        categories.add("Swimming");
-        categories.add("Handball");
+        List<String> sportsDropDrown = new ArrayList<String>();
+        sportsDropDrown.add(0, "Basketball");
+        sportsDropDrown.add(1, "Football");
+        sportsDropDrown.add(2, "Soccer");
+        sportsDropDrown.add(3, "Swimming");
+        sportsDropDrown.add(4, "Handball");
+
+        List<String> skillDropDown = new ArrayList<String>();
+        skillDropDown.add(0, "Beginner");
+        skillDropDown.add(1, "Intermediate");
+        skillDropDown.add(2, "Expert");
+
+        ArrayAdapter<String> skillAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, skillDropDown);
+        skillAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        skillLevel.setAdapter(skillAdapter);
         sportsSelect = (Spinner) findViewById(R.id.sportsSelect);
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, categories);
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, sportsDropDrown);
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         sportsSelect.setAdapter(dataAdapter);
 
 
     }
+/*
+    public void AddData() {
+        submitBtn.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        boolean isInserted = myDataBase.insertData(nameofGamer.getText().toString(),
+                                editSurname.getText().toString(),
+                                editMarks.getText().toString());
+                        if (isInserted == true)
+                            Toast.makeText(getApplicationContext(), "Data Inserted", Toast.LENGTH_LONG).show();
+                        else
+                            Toast.makeText(getApplicationContext(), "Data not Inserted", Toast.LENGTH_LONG).show();
+                    }
+                }
+        );
+    }
+    */
 }

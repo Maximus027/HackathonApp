@@ -54,6 +54,20 @@ public class BasketballAdapter extends RecyclerView.Adapter<BasketballAdapter.My
             cityNames = (TextView) itemView.findViewById(R.id.bouroughOfGame);
             dateOfGame = (TextView) itemView.findViewById(R.id.dateOfGame);
             button = (Button) itemView.findViewById(R.id.joingameBTN);
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    switch(getAdapterPosition()){
+                        case 0 :
+                            break;
+                        case 1:
+                            break;
+                        case 2:
+                            break;
+
+                    }
+                }
+            });
 
         }
     }

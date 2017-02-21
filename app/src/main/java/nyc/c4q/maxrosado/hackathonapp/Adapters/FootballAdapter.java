@@ -16,14 +16,13 @@ import nyc.c4q.maxrosado.hackathonapp.R;
 
 public class FootballAdapter extends RecyclerView.Adapter<FootballAdapter.MyViewHolder> {
 
-    String[] bouroughNames = {"Manhattan", "Bronx", "Brooklyn", "Queens", "Staten Island",
-            "Manhattan", "Bronx", "Brooklyn", "Queens", "Staten Island"};
-    String[] dates = {"Thu Jan 28th ", "Mon Feb 28th ", "Fri Jan 28th ", "Wed Jan 28th "};
-    int[] sportsCons = {R.drawable.footballicon, R.drawable.footballicon, R.drawable.footballicon,
-            R.drawable.footballicon, R.drawable.footballicon};
-    int[] peopleIcons = {R.drawable.usericon, R.drawable.usericon, R.drawable.usericon, R.drawable.usericon,
-            R.drawable.usericon, R.drawable.usericon, R.drawable.usericon, R.drawable.usericon,
-            R.drawable.usericon, R.drawable.usericon, R.drawable.usericon};
+    
+    String[] bouroughNames = {"Manhattan", "Queens", "Bronx"};
+    String[] times = {"12:30 PM", "9:30AM", "1:30PM"};
+    String[] dates = {"Thu Feb 28th ", "Friday November 3rd", "Tuesday July 8th"};
+    int[] sportsCons = {R.drawable.footballicon, R.drawable.footballicon, R.drawable.footballicon};
+    int[] peopleIcons = {R.drawable.usericon, R.drawable.usericon, R.drawable.usericon};
+    int[] userImageList = {R.drawable.user5, R.drawable.user6, R.drawable.user7, R.drawable.user8};
     private ImageView userImage;
     private ImageView sportsIcon;
     private ImageView oneperson;
@@ -33,6 +32,7 @@ public class FootballAdapter extends RecyclerView.Adapter<FootballAdapter.MyView
     private ImageView additionalTeam;
     private TextView cityNames;
     private TextView dateOfGame;
+    private TextView timeofGame;
     private Button button;
 
 
@@ -40,6 +40,7 @@ public class FootballAdapter extends RecyclerView.Adapter<FootballAdapter.MyView
 
         public MyViewHolder(View itemView) {
             super(itemView);
+            timeofGame = (TextView) itemView.findViewById(R.id.timeView);
             userImage = (ImageView) itemView.findViewById(R.id.userImage);
             sportsIcon = (ImageView) itemView.findViewById(R.id.sportsIcon);
             oneperson = (ImageView) itemView.findViewById(R.id.onePerson);
@@ -62,6 +63,8 @@ public class FootballAdapter extends RecyclerView.Adapter<FootballAdapter.MyView
 
     @Override
     public void onBindViewHolder(FootballAdapter.MyViewHolder holder, int position) {
+        timeofGame.setText(times[position]);
+        userImage.setImageResource(userImageList[position]);
         sportsIcon.setImageResource(sportsCons[position]);
         oneperson.setImageResource(peopleIcons[position]);
         twoperson.setImageResource(peopleIcons[position]);

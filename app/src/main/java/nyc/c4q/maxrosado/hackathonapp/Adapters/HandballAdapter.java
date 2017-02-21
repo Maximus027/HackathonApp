@@ -19,8 +19,8 @@ public class HandballAdapter extends RecyclerView.Adapter<HandballAdapter.MyView
     String[] bouroughNames = {"Manhattan", "Bronx", "Brooklyn", "Queens", "Staten Island",
             "Manhattan", "Bronx", "Brooklyn", "Queens", "Staten Island"};
     String[] dates = {"Thu Jan 28th ", "Mon Feb 28th ", "Fri Jan 28th ", "Wed Jan 28th "};
-    int[] sportsCons = {R.drawable.footballicon, R.drawable.footballicon, R.drawable.footballicon,
-            R.drawable.footballicon, R.drawable.footballicon};
+    int[] sportsCons = {R.drawable.handballicon, R.drawable.handballicon, R.drawable.handballicon,
+            R.drawable.handballicon, R.drawable.handballicon};
     int[] peopleIcons = {R.drawable.usericon, R.drawable.usericon, R.drawable.usericon, R.drawable.usericon,
             R.drawable.usericon, R.drawable.usericon, R.drawable.usericon, R.drawable.usericon,
             R.drawable.usericon, R.drawable.usericon, R.drawable.usericon};

@@ -10,5 +10,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="nyc.c4q.maxrosado.hackathonapp.Joingame">
 
-
+    <TextView
+        android:id="@+id/game1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </RelativeLayout>

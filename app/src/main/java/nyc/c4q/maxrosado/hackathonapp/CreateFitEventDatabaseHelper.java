@@ -1,5 +1,6 @@
 package nyc.c4q.maxrosado.hackathonapp;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -14,12 +15,15 @@ public class CreateFitEventDatabaseHelper extends SQLiteOpenHelper {
 
     //create constant values for our database name and version number
     private static final String DATABASE_NAME = "fitnessActivity.db";
+    private static final String TABLE_NAME = "CREATE GAME";
     private static final int DATABASE_VERSION = 1;
+    public static final String COL_1 = "NAME";
+    public static final String COL_2 = "DATE";
+    public static final String COL_3 = "TIME";
+    public static final String COL_4 = "SKILL";
 
-    //making this class a Singleton class - only capable of having a single instance
     private static CreateFitEventDatabaseHelper instance;
 
-    //get our single instance, sychronized so that multiple threads will be blocked if one is using this method
     public static synchronized CreateFitEventDatabaseHelper getInstance(Context context) {
         if (instance == null) {
             instance = new CreateFitEventDatabaseHelper(context.getApplicationContext());
@@ -27,23 +31,17 @@ public class CreateFitEventDatabaseHelper extends SQLiteOpenHelper {
         return instance;
     }
 
-    //create a private constructor so that we can't instantiate a new EventsDatabaseHelper outside this class
-    private CreateFitEventDatabaseHelper(Context context) {
+    public CreateFitEventDatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
-    }
-
-    static {
-        //register our models (tables in our database)
-        //cupboard().register(DatabaseEvents.class);
-        //cupboard().register(DatabasePlace.class);
     }
 
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        // this will ensure that all tables are created
-        cupboard().withDatabase(db).createTables();
-        // add indexes and other database tweaks in this method if you want
+        db.execSQL("create table" + TABLE_NAME + "(NAME TEXT, DATE INTEGER,TIME INTEGER, SKILL TEXT)");
+        db.execSQL("DROP TABLE IF IT EXISTS " + TABLE_NAME);
+        onCreate(db);
+        // cupboard().withDatabase(db).createTables();
     }
 
     @Override
@@ -51,8 +49,22 @@ public class CreateFitEventDatabaseHelper extends SQLiteOpenHelper {
         // this will upgrade tables, adding columns and new tables.
         // Note that existing columns will not be converted
         cupboard().withDatabase(db).upgradeTables();
-        // do migration work if you have an alteration to make to your schema here
     }
+
+    public boolean insertData(String name, int date, int time, String skill) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(COL_1, name);
+        contentValues.put(COL_2, date);
+        contentValues.put(COL_3, time);
+        contentValues.put(COL_4, skill);
+        long result = db.insert(TABLE_NAME, null, contentValues);
+        if (result == -1)
+            return false;
+        else
+            return true;
+    }
+
 
 }
 
