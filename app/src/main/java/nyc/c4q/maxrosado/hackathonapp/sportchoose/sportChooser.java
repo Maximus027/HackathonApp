@@ -11,7 +11,7 @@ import android.widget.Toast;
 import nyc.c4q.maxrosado.hackathonapp.HomeActivity;
 import nyc.c4q.maxrosado.hackathonapp.R;
 
-public class sportChooser extends AppCompatActivity {
+public class SportChooser extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,10 +25,10 @@ public class sportChooser extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View v,
                                     int position, long id) {
                 if (position < 4) {
-                    Intent intent = new Intent(sportChooser.this, HomeActivity.class);
+                    Intent intent = new Intent(SportChooser.this, HomeActivity.class);
                     startActivity(intent);
                 } else {
-                    Toast.makeText(sportChooser.this, "" + position,
+                    Toast.makeText(SportChooser.this, "" + position,
                             Toast.LENGTH_SHORT).show();
                 }
 

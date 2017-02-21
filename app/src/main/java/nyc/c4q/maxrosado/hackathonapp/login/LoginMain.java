@@ -8,7 +8,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import nyc.c4q.maxrosado.hackathonapp.R;
-import nyc.c4q.maxrosado.hackathonapp.sportchoose.sportChooser;
+import nyc.c4q.maxrosado.hackathonapp.sportchoose.SportChooser;
 
 public class LoginMain extends AppCompatActivity {
 
@@ -42,7 +42,7 @@ public class LoginMain extends AppCompatActivity {
 
         } else {
 
-            Intent sportChoose = new Intent(this, sportChooser.class);
+            Intent sportChoose = new Intent(this, SportChooser.class);
             startActivity(sportChoose);
 
         }
