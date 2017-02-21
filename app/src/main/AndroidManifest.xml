@@ -36,22 +36,21 @@
         <activity android:name=".Handbal" />
         <activity android:name=".Swimming" />
         <activity android:name=".sportchoose.Soccer" />
-        <activity android:name=".tabFragments.parks.ParksActivity"></activity>
+        <activity android:name=".tabFragments.parks.ParksActivity" />
         <activity android:name=".login.LoginMain" />
         <activity android:name=".login.LoginCreate" />
         <activity android:name=".CreateGameActivity" />
         <activity android:name=".CreateGameActivity2" />
         <activity android:name=".CreateGameActivity3" />
-        <activity android:name=".tabFragments.HomeActivity"></activity>
-        <activity android:name=".tabFragments.bike.BikeRentalActivity"></activity>
-        <activity android:name=".tabFragments.handball.HandballActivity">
-
-        </activity>
+        <activity android:name=".tabFragments.HomeActivity" />
+        <activity android:name=".tabFragments.bike.BikeRentalActivity" />
+        <activity android:name=".tabFragments.handball.HandballActivity"></activity>
         <activity
             android:name=".tabFragments.basketball.BasketballActivity"
             android:label="@string/title_activity_basketball"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Joingame"></activity>
+        <activity android:name=".Joingame" />
+        <activity android:name=".CreateGameActivity4"></activity>
     </application>
 
 </manifest>

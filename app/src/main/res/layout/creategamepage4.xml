@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/createGameScroolView"
+    android:layout_width="match_parent"
+    android:layout_height="700dp"
+    android:layout_marginLeft="7dp"
+    android:layout_marginRight="7dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/fulllayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:background="@color/White"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/createGameTag"
+            android:alpha="10"
+            android:gravity="center_horizontal"
+            android:shadowColor="@color/black"
+            android:textColor="@color/black" />
+
+
+        <LinearLayout
+            android:id="@+id/PLAYERSLAYOUT"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/NAMELAYOUT"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/howmanyplayersTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="How Many Players ? :"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/playerSelect"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:dropDownSelector="@color/darkestGreenScheme" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/EQUIPMENTNAMESPACE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PLAYERSLAYOUT"
+            android:layout_marginBottom="99dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:id="@+id/equipmentTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Do you have equipment ? :"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/equipmentReponse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/continbtn"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/EQUIPMENTNAMESPACE"
+            android:layout_marginBottom="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/middleGreenScheme"
+            android:text="CONTINUE" />
+
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

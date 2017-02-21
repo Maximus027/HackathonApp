@@ -34,23 +34,14 @@
             android:datePickerMode="calendar" />
 
 
-        <android.support.v7.widget.CardView
-            android:id="@+id/CONTINUEBTN"
+        <Button
+            android:id="@+id/continuebtn"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/SKILLNAMESPACE"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="15dp">
+            android:layout_height="match_parent"
+            android:background="@color/middleGreenScheme"
+            android:text="CONTINUE"
+            android:textColor="@color/White" />
 
-            <Button
-                android:id="@+id/continuebtn"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/lightGreenScheme"
-                android:text="CONTINUE"
-                android:textColor="@color/White" />
-        </android.support.v7.widget.CardView>
 
     </LinearLayout>
 
