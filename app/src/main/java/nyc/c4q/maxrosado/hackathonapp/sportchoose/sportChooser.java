@@ -6,10 +6,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
-import android.widget.Toast;
 
-import nyc.c4q.maxrosado.hackathonapp.HomeActivity;
+import nyc.c4q.maxrosado.hackathonapp.Basketball;
+import nyc.c4q.maxrosado.hackathonapp.Football;
+import nyc.c4q.maxrosado.hackathonapp.Handbal;
 import nyc.c4q.maxrosado.hackathonapp.R;
+import nyc.c4q.maxrosado.hackathonapp.models.bike_models.BikeRental;
+
+import nyc.c4q.maxrosado.hackathonapp.tabFragments.HomeActivity;
+import nyc.c4q.maxrosado.hackathonapp.tabFragments.bike.BikeRentalActivity;
+import nyc.c4q.maxrosado.hackathonapp.tabFragments.handball.HandballActivity;
+import nyc.c4q.maxrosado.hackathonapp.tabFragments.parks.ParksActivity;
+
+import nyc.c4q.maxrosado.hackathonapp.Swimming;
+
 
 public class SportChooser extends AppCompatActivity {
 
@@ -24,6 +34,7 @@ public class SportChooser extends AppCompatActivity {
         gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View v,
                                     int position, long id) {
+<<<<<<< HEAD
                 if (position < 4) {
                     Intent intent = new Intent(SportChooser.this, HomeActivity.class);
                     startActivity(intent);
@@ -31,9 +42,67 @@ public class SportChooser extends AppCompatActivity {
                     Toast.makeText(SportChooser.this, "" + position,
                             Toast.LENGTH_SHORT).show();
                 }
+=======
+//                 Class goToactivity = HomeActivity.class;
+//                 Intent activityChosen;
+
+//                 switch (position){
+//                     case 0://Parks
+//                         goToactivity = ParksActivity.class;
+//                         break;
+//                     case 1://Basketball
+//                         goToactivity = HomeActivity.class;
+//                         break;
+//                     case 2://Handball
+//                         goToactivity = HandballActivity.class;
+//                         break;
+//                     case 3://Soccer
+//                         goToactivity = HomeActivity.class;
+//                         break;
+//                     case 4://Football
+//                         goToactivity = HomeActivity.class;
+//                         break;
+//                     case 5://Bikes
+//                         goToactivity = BikeRentalActivity.class;
+//                         break;
+//                     case 6:
+//                         break;
+
+
+                switch (position) {
+                    case 0:
+                        Intent goToParks = new Intent(getApplicationContext(), ParksActivity.class);
+                        startActivity(goToParks);
+                        break;
+                    case 1:
+                        Intent goToBasketBall = new Intent(getApplicationContext(), Basketball.class);
+                        startActivity(goToBasketBall);
+                        break;
+                    case 2:
+                        Intent goToHandBall = new Intent(getApplicationContext(), Handbal.class);
+                        startActivity(goToHandBall);
+                        break;
+                    case 3:
+                        Intent goToSoccer = new Intent(getApplicationContext(), Soccer.class);
+                        startActivity(goToSoccer);
+                        break;
+                    case 4:
+                        Intent goToFootBall = new Intent(getApplicationContext(), Football.class);
+                        startActivity(goToFootBall);
+                        break;
+                    case 5:
+                        Intent goToBikes = new Intent(getApplicationContext(), BikeRentalActivity.class);
+                        startActivity(goToBikes);
+                        break;
+>>>>>>> 37ee1258fdb5c8db86973b98d5013d31c756bc5a
 
                 }
-            });
+
+//                 activityChosen = new Intent(sportChooser.this, goToactivity);
+//                     startActivity(activityChosen);
+
+            }
+        });
 
     }
 
